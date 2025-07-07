@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Newline Replacer</title>
+</head>
+<body>
+  <h1>Replace Newlines with "/n"</h1>
+  <textarea id="input" rows="10" cols="50" placeholder="Paste your text here..."></textarea>
+  <br>
+  <button onclick="replaceNewlines()">Convert</button>
+  <br><br>
+  <textarea id="output" rows="10" cols="50" placeholder="Converted text will appear here..."></textarea>
+
+  <script>
+    function replaceNewlines() {
+      const input = document.getElementById("input").value;
+      const output = input.replace(/\n/g, "/n");
+      document.getElementById("output").value = output;
+    }
+  </script>
+</body>
+</html>
